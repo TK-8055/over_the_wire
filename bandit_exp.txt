@@ -1,0 +1,54 @@
+Level 0:
+   Just login through the terminal with ssh with user name bandit0 and password bandit0 at "@bandit.labs.overthewire.org" 
+   CMD:
+       "sshpass -f 0 ssh -p 2220 bandit0@bandit.labs.overthewire.org"
+       sshpass --> Can supply the password automaticaly
+       -f --> It is used for reading the password file 
+       ssh (or) Secure shell --> It is a network protocal that provides a secure and encrypeted way to remotely access
+       -p --> It refers to port number 2220
+       bandit0 --> User name 
+       @bandit.labs.overthewire.org --> It is address of the domain
+
+       "ssh -p 2220 bandit0@bandit.labs.overthewire.org" and password can entered manullay
+
+       Step 1:
+              Just read the readme file "cat readme"
+       Step 2:
+              Save the password as 1
+       Step 3:
+              Exit from terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 1:
+   Login with username bandit1 and the password we have got before using the terminal and our problem is to read a file named "-".
+   CMD:
+      "sshpass -f 1 ssh -p 2220 bandit1@bandit.labs.overthewire.org"
+      
+      Step 1:
+             The file name is like - if we use "cat -" it just echo what ever we type it just print.
+      Step 2:
+             So we use "cat ./-" to read the file
+      step 3:
+             It will print the password just save it as 2
+      Step 4:
+             Exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 2:
+   Login with username bandit2 and password we got on level 1 our problem is to read a file name with spaces and it starts with "-"
+   CMD:
+       "sshpass -f 2 ssh -p 2220 bandit2@bandit.labs.overthewire.org"
+
+       Step 1:
+              We can't normally read file name with space and it also start with "-"
+       Step 2:
+              We are going to use "cat ./--spaces\ in\ this\ filename--"
+
+       Step 3:
+              To read to the file space we use "\" at end of the word and starting of the space 
+       Step 4:
+              It will print the password just save it as 3
+       Step 5:
+              Exit form the terminal
