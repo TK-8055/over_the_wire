@@ -102,7 +102,7 @@ Level 4:
              | grep "text" -> Filter the text file alone (or) ASCII text
         Step 6:
               Read the file using CMD cat.
-        step 7:
+        Step 7:
        
               it will print the password just save it as 5
        step 8:
@@ -132,7 +132,7 @@ Level 5:
              CMD ==> "find -type f -size 1033c".
        Step 6:
              use cat cmd to print the file "cat ./maybehere07/.file2".
-        step 7 
+       Step 7: 
               it will print the password just save it as 6
        step 8:
               exit form the terminal
@@ -149,8 +149,35 @@ Level 6:
   CMD:
        "sshpass -f 6 ssh -p 2220 bandit6@bandit.labs.overthewire.org"
 
-       Step:1
-            We need to find a file that is both owned by user bandit7 and group bandit6
-       Step:2
-            We use "find /-type f -user bandit7 -group bandit6 -size 33c 2>/dev/null"
+       Step 1:
+             We need to find a file that is both owned by user bandit7 and group bandit6
+       Step 2:
+             We use "find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null"
+       Step 3:
+             we are trying to find a file that is owned by bandit7 and group bandit6 which a also has file size of 33c and 2>/dev/null clean up the screen which means what are all the file as permission denied it will not show it
+       Step 4:
+             Using cat read the file.
+       Step 5: 
+              It will print the password just save it as 7
+       step 6:
+              exit form the terminal
 
+<<=======================================xxxxx===============================================>>
+
+Level 7:
+       Login with username bandit7 and password we got on level 6
+       we need to find word "millionth" from the file data.text
+
+       Step 1:
+             Use grep "millionth" data.text
+       Step 2:
+              It will find the word millionth
+       Step 3: 
+              It will print the password just save it as 8
+       step 4:
+              exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 8:
+       Login with username bandit8 and password we got on level 7
