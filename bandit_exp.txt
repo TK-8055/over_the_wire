@@ -61,7 +61,7 @@ Level 3:
        Login with username bandit3 and password we got on level 2
        We need to find a hidden file in a folder called "inhere"
   CMD:
-       "sshpass -f 3 ssh -p 2220 bandit3bandit.labs.overthewire.org"
+       "sshpass -f 3 ssh -p 2220 bandit3@bandit.labs.overthewire.org"
 
 
        Step 1:
@@ -83,7 +83,7 @@ Level 4:
        Login with username bandit4 and password we got on level 3
        We need to find the file which as the password from multiple file 
   CMD:
-       "sshpass -f 4 ssh -p 2220 bandit4bandit.labs.overthewire.org"
+       "sshpass -f 4 ssh -p 2220 bandit4@bandit.labs.overthewire.org"
 
        Step 1:
               Go into the file that at staring.
@@ -118,7 +118,7 @@ Level 5:
         3) not executable
 
  CMD:
-       "sshpass -f 5 ssh -p 2220 bandit5bandit.labs.overthewire.org"
+       "sshpass -f 5 ssh -p 2220 bandit5@bandit.labs.overthewire.org"
 
        Step 1:
               Go into the folder that at staring.
@@ -138,4 +138,19 @@ Level 5:
               exit form the terminal
 
 <<=======================================xxxxx===============================================>>
+
+Level 6:
+       Login with username bandit6 and password we got on level 5
+       we need to find a file that is owned by user bandit7 and group bandit
+         1)Owned by user bandit7
+         2)Owned by group bandit6
+         3)33 bytes in size
+  
+  CMD:
+       "sshpass -f 6 ssh -p 2220 bandit6@bandit.labs.overthewire.org"
+
+       Step:1
+            We need to find a file that is both owned by user bandit7 and group bandit6
+       Step:2
+            We use "find /-type f -user bandit7 -group bandit6 -size 33c 2>/dev/null"
 
