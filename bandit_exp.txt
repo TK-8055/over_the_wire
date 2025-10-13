@@ -21,7 +21,8 @@ Level 0:
 <<=======================================xxxxx===============================================>>
 
 Level 1:
-   Login with username bandit1 and the password we have got before using the terminal and our problem is to read a file named "-".
+   Login with username bandit1 and the password we have got before using the terminal
+   Our problem is to read a file named "-".
    CMD:
       "sshpass -f 1 ssh -p 2220 bandit1@bandit.labs.overthewire.org"
       
@@ -37,7 +38,8 @@ Level 1:
 <<=======================================xxxxx===============================================>>
 
 Level 2:
-   Login with username bandit2 and password we got on level 1 our problem is to read a file name with spaces and it starts with "-"
+   Login with username bandit2 and password we got on level 1
+   Our problem is to read a file name with spaces and it starts with "-"
    CMD:
        "sshpass -f 2 ssh -p 2220 bandit2@bandit.labs.overthewire.org"
 
@@ -52,3 +54,88 @@ Level 2:
               It will print the password just save it as 3
        Step 5:
               Exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 3:
+       Login with username bandit3 and password we got on level 2
+       We need to find a hidden file in a folder called "inhere"
+  CMD:
+       "sshpass -f 3 ssh -p 2220 bandit3bandit.labs.overthewire.org"
+
+
+       Step 1:
+              "ls" to view the folder.
+       Step 2:
+              "cd filename" to enter into the file.
+       Step 3:
+              If use ls we can will not find any thing because the file start with "." which means it is hidden to view it use "ls -a".
+       Step 4:
+               Use cat cmd to read the file make sure how many "." are there and letter case.
+       Step 5:
+              It will print the password just save it as 4
+       Step 6:
+              Exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 4:
+       Login with username bandit4 and password we got on level 3
+       We need to find the file which as the password from multiple file 
+  CMD:
+       "sshpass -f 4 ssh -p 2220 bandit4bandit.labs.overthewire.org"
+
+       Step 1:
+              Go into the file that at staring.
+       Step 2:
+              Use the cmd ls to find the file.
+       Step 3:
+              There are nine file and we can check one by one.
+       Step 4:
+              Are we can use cmd like find,grep and exec.
+       Step 5:
+             CMD==> "find -type f -exec file {} + | grep "text"".
+             
+             find -> It is used to find file (or) folder
+             -type f -> Used to specifies that we are looking for a file 
+             -exec file {} + -> Executes the file.
+             | grep "text" -> Filter the text file alone (or) ASCII text
+        Step 6:
+              Read the file using CMD cat.
+        step 7:
+       
+              it will print the password just save it as 5
+       step 8:
+              exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 5:
+       Login with username bandit5 and password we got on level 4
+       We need find the folder and file which as password
+        1) Human-readable
+        2) 1033 bytes in size
+        3) not executable
+
+ CMD:
+       "sshpass -f 5 ssh -p 2220 bandit5bandit.labs.overthewire.org"
+
+       Step 1:
+              Go into the folder that at staring.
+       Step 2:
+              Use the cmd ls to list the folder.
+       Step 3:
+              There are 19 folder and we can check one by one.
+       Step 4:
+              Are we can use cmd like find,size.
+       Step 5:
+             CMD ==> "find -type f -size 1033c".
+       Step 6:
+             use cat cmd to print the file "cat ./maybehere07/.file2".
+        step 7 
+              it will print the password just save it as 6
+       step 8:
+              exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
