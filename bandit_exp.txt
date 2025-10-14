@@ -181,3 +181,21 @@ Level 7:
 
 Level 8:
        Login with username bandit8 and password we got on level 7
+       we need to find a unique value from data.text
+
+       CMD:
+           sort data.txt | uniq -uc
+       Step 1:
+              we need to find the password that come only one time 
+       Step 2:
+              using sort and uniq we can find the data 
+       Step 3: 
+              It will print the password just save it as 9
+       step 4:
+              exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 9:
+       Login with username bandit9 and password we got on level 8
+ 
