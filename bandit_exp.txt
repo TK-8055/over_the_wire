@@ -198,4 +198,21 @@ Level 8:
 
 Level 9:
        Login with username bandit9 and password we got on level 8
- 
+       we need to find the line which as == used more time 
+
+       CMD:
+           strings data.txt | grep "="
+       Step 1:
+             we need to find the more equal to which line as and it as the next flag 
+       Step 2:
+              we can use grep "=" data.txt but it is not text file alone so we use this cmd
+       Step 3: 
+              It will print the password just save it as 10
+       step 4:
+              exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 10:
+       Login with username bandit10 and password we got on level 9
+       
