@@ -215,4 +215,22 @@ Level 9:
 
 Level 10:
        Login with username bandit10 and password we got on level 9
-       
+       we need to decode the file data.txt which was encode by base64
+
+       CMD :
+            "base64 -d data.txt"
+
+       Step 1:
+              we need to find the file name using ls 
+       Step 2:
+              And we need to decode with base64
+       Step 3: 
+              It will print the password just save it as 11
+       step 4:
+              exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 11:
+       Login with username bandit11 and password we got on level 10
+
