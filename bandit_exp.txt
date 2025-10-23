@@ -233,4 +233,22 @@ Level 10:
 
 Level 11:
        Login with username bandit11 and password we got on level 10
+       The next flag have been rotated by 13 position
+
+       CMD:
+           cat data.txt
+       
+       Step 1:
+              We want to get encode text by using command cat
+       Step 2:
+              We use website like rot13.com to decode the text
+       Step 3: 
+              It will give the password just save it as 12
+       step 4:
+              exit form the terminal
+
+<<=======================================xxxxx===============================================>>
+
+Level 11:
+       Login with username bandit12 and password we got on level 11
 
