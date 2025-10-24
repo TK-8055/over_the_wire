@@ -249,6 +249,48 @@ Level 11:
 
 <<=======================================xxxxx===============================================>>
 
-Level 11:
+Level 12:
        Login with username bandit12 and password we got on level 11
+       we need to decompress the file which was compressed multiple time with different file extension.
+       we need to create a file and it should unique.
+       CMD:
+          mkdir /tmp/filename
+
+          cp data.txt /tmp/filename
+
+          cd /tmp/filename
+
+          xxd -r data.txt >data
+
+          mv data file.gz
+
+          mv file data.bz2
+
+          bzip2 -d data.bz2
+
+          mv data data.gz
+          
+          gzip -d data.gz
+
+          mv data data.tar
+
+          tar -xf data.tar
+
+          tar -xf data5.bin
+
+          mv data6.bin data6.bz2
+
+          bzip -d data6.bz2
+
+          mv data6 data6.tar
+
+          tar -xf data6.tar
+
+          mv data8.bin data.gz
+
+          gzip -d data.gzip
+
+          cat data
+
+          exit
 
