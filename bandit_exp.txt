@@ -1,15 +1,18 @@
 Level 0:
-   Just login through the terminal with ssh with user name bandit0 and password bandit0 at "@bandit.labs.overthewire.org" 
+   Just login through the terminal with ssh with user name bandit0
+   and password bandit0 at "@bandit.labs.overthewire.org" 
    CMD:
        "sshpass -f 0 ssh -p 2220 bandit0@bandit.labs.overthewire.org"
        sshpass --> Can supply the password automaticaly
        -f --> It is used for reading the password file 
-       ssh (or) Secure shell --> It is a network protocal that provides a secure and encrypeted way to remotely access
+       ssh (or) Secure shell --> It is a network protocal that
+       provides a secure and encrypeted way to remotely access
        -p --> It refers to port number 2220
        bandit0 --> User name 
        @bandit.labs.overthewire.org --> It is address of the domain
 
-       "ssh -p 2220 bandit0@bandit.labs.overthewire.org" and password can entered manullay
+       "ssh -p 2220 bandit0@bandit.labs.overthewire.org" and
+       password can entered manullay
 
        Step 1:
               Just read the readme file "cat readme"
@@ -18,16 +21,18 @@ Level 0:
        Step 3:
               Exit from terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 1:
-   Login with username bandit1 and the password we have got before using the terminal
+   Login with username bandit1 and the password we have got before
+   using the terminal
    Our problem is to read a file named "-".
    CMD:
       "sshpass -f 1 ssh -p 2220 bandit1@bandit.labs.overthewire.org"
       
       Step 1:
-             The file name is like - if we use "cat -" it just echo what ever we type it just print.
+             The file name is like - if we use "cat -" it just echo
+             what ever we type it just print.
       Step 2:
              So we use "cat ./-" to read the file
       step 3:
@@ -35,27 +40,31 @@ Level 1:
       Step 4:
              Exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 2:
    Login with username bandit2 and password we got on level 1
-   Our problem is to read a file name with spaces and it starts with "-"
+   Our problem is to read a file name with spaces and it starts
+   with "-"
    CMD:
        "sshpass -f 2 ssh -p 2220 bandit2@bandit.labs.overthewire.org"
 
        Step 1:
-              We can't normally read file name with space and it also start with "-"
+              We can't normally read file name with space and it
+              also start with "-"
        Step 2:
-              We are going to use "cat ./--spaces\ in\ this\ filename--"
+              We are going to use
+              "cat ./--spaces\ in\ this\ filename--"
 
        Step 3:
-              To read to the file space we use "\" at end of the word and starting of the space 
+              To read to the file space we use "\" at end of the
+              word and starting of the space 
        Step 4:
               It will print the password just save it as 3
        Step 5:
               Exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 3:
        Login with username bandit3 and password we got on level 2
@@ -69,21 +78,25 @@ Level 3:
        Step 2:
               "cd filename" to enter into the file.
        Step 3:
-              If use ls we can will not find any thing because the file start with "." which means it is hidden to view it use "ls -a".
+              If use ls we can will not find any thing because
+              the file start with "." which means it is hidden
+              to view it use "ls -a".
        Step 4:
-               Use cat cmd to read the file make sure how many "." are there and letter case.
+               Use cat cmd to read the file make sure how many
+               "." are there and letter case.
        Step 5:
               It will print the password just save it as 4
        Step 6:
               Exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 4:
        Login with username bandit4 and password we got on level 3
-       We need to find the file which as the password from multiple file 
+       We need to find the file which as the password from
+       multiple file 
   CMD:
-       "sshpass -f 4 ssh -p 2220 bandit4@bandit.labs.overthewire.org"
+     "sshpass -f 4 ssh -p 2220 bandit4@bandit.labs.overthewire.org"
 
        Step 1:
               Go into the file that at staring.
@@ -96,10 +109,10 @@ Level 4:
        Step 5:
              CMD==> "find -type f -exec file {} + | grep "text"".
              
-             find -> It is used to find file (or) folder
-             -type f -> Used to specifies that we are looking for a file 
-             -exec file {} + -> Executes the file.
-             | grep "text" -> Filter the text file alone (or) ASCII text
+         find -> It is used to find file (or) folder
+         -type f -> Used to specifies that we are looking for a file 
+         -exec file {} + -> Executes the file.
+         | grep "text" -> Filter the text file alone (or) ASCII text
         Step 6:
               Read the file using CMD cat.
         Step 7:
@@ -108,7 +121,7 @@ Level 4:
        step 8:
               exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 5:
        Login with username bandit5 and password we got on level 4
@@ -118,7 +131,7 @@ Level 5:
         3) not executable
 
  CMD:
-       "sshpass -f 5 ssh -p 2220 bandit5@bandit.labs.overthewire.org"
+   "sshpass -f 5 ssh -p 2220 bandit5@bandit.labs.overthewire.org"
 
        Step 1:
               Go into the folder that at staring.
@@ -131,17 +144,19 @@ Level 5:
        Step 5:
              CMD ==> "find -type f -size 1033c".
        Step 6:
-             use cat cmd to print the file "cat ./maybehere07/.file2".
+             use cat cmd to print the file
+             "cat ./maybehere07/.file2".
        Step 7: 
               it will print the password just save it as 6
        step 8:
               exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 6:
        Login with username bandit6 and password we got on level 5
-       we need to find a file that is owned by user bandit7 and group bandit
+       we need to find a file that is owned by user bandit7 and
+       group bandit
          1)Owned by user bandit7
          2)Owned by group bandit6
          3)33 bytes in size
@@ -150,11 +165,17 @@ Level 6:
        "sshpass -f 6 ssh -p 2220 bandit6@bandit.labs.overthewire.org"
 
        Step 1:
-             We need to find a file that is both owned by user bandit7 and group bandit6
+             We need to find a file that is both owned by user
+             bandit7 and group bandit6
        Step 2:
-             We use "find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null"
+             We use
+  "find / -type f -user bandit7 -group bandit6 -size 33c 2>/dev/null"
        Step 3:
-             we are trying to find a file that is owned by bandit7 and group bandit6 which a also has file size of 33c and 2>/dev/null clean up the screen which means what are all the file as permission denied it will not show it
+             we are trying to find a file that is owned by bandit7
+             and group bandit6 which a also has file size of 33c
+             and 2>/dev/null clean up the screen which means what
+             are all the file as permission denied it will not
+             show it
        Step 4:
              Using cat read the file.
        Step 5: 
@@ -162,7 +183,7 @@ Level 6:
        step 6:
               exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 7:
        Login with username bandit7 and password we got on level 6
@@ -177,7 +198,7 @@ Level 7:
        step 4:
               exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 8:
        Login with username bandit8 and password we got on level 7
@@ -194,7 +215,7 @@ Level 8:
        step 4:
               exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 9:
        Login with username bandit9 and password we got on level 8
@@ -203,19 +224,22 @@ Level 9:
        CMD:
            strings data.txt | grep "="
        Step 1:
-             we need to find the more equal to which line as and it as the next flag 
+             we need to find the more equal to which line as and it
+             as the next flag 
        Step 2:
-              we can use grep "=" data.txt but it is not text file alone so we use this cmd
+              we can use grep "=" data.txt but it is not text file
+              alone so we use this cmd
        Step 3: 
               It will print the password just save it as 10
        step 4:
               exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 10:
        Login with username bandit10 and password we got on level 9
-       we need to decode the file data.txt which was encode by base64
+       we need to decode the file data.txt which was encode by
+       base64
 
        CMD :
             "base64 -d data.txt"
@@ -229,7 +253,7 @@ Level 10:
        step 4:
               exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 11:
        Login with username bandit11 and password we got on level 10
@@ -247,11 +271,12 @@ Level 11:
        step 4:
               exit form the terminal
 
-<<=======================================xxxxx===============================================>>
+<<================================================================>>
 
 Level 12:
        Login with username bandit12 and password we got on level 11
-       we need to decompress the file which was compressed multiple time with different file extension.
+       we need to decompress the file which was compressed multiple
+       time with different file extension.
        we need to create a file and it should unique.
        CMD:
           mkdir /tmp/filename
@@ -293,4 +318,38 @@ Level 12:
           cat data
 
           exit
+        
+        Step 1:
+               we are decodeing the file bzip, gzip and tar file
+               they are encode multiple times.
+       Step 2: 
+              It will give the password just save it as 13
+       step 3:
+              exit form the terminal
+
+<<================================================================>>
+
+Level 13:
+       Login with username bandit13 and password we got on level 12
+       We need to login bandit14 with sshkey @localhost 
+
+       CMD:
+           ssh -i sshkey.private bandit14@localhost
+
+      Step 1:
+            We are login as a local host in bandit 14.
+
+      Step 2:
+            Use cat cmd to read the file bandit14 we get next
+            password
+
+       Step 2: 
+              It will give the password just save it as 15
+       step 3:
+              exit form the terminal
+
+<<================================================================>>
+
+Level 15:
+       Login with username bandit15 and password we got on level 13
 
